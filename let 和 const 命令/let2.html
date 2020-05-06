@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        if (true) {
+            //tmp = 'abc';
+            //console.log(tmp);
+
+            let tmp;
+            console.log(tmp);
+
+            tmp = 123;
+            console.log(tmp); //在let命令声明变量tmp之前，都属于变量tmp的“死区”。
+            //typeof x;//“暂时性死区”也意味着typeof不再是一个百分之百安全的操作
+            //let x;//变量x使用let命令声明，所以在声明之前，都属于x的“死区”，只要用到该变量就会报错。
+        }
+    </script>
+</body>
+
+</html>

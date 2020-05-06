@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = [];
+        for (let i = 0; i < 10; i++) {
+            a[i] = function() {
+                console.log(i); //所以输出5
+            };
+        }
+        a[5](); //就是只循环一次，a[i],i是什么就是什么
+    </script>
+</body>
+
+</html>

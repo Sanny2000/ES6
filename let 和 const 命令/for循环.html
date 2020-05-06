@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var a = [];
+        for (var i = 0; i < 9; i++) {
+            a[i] = function() {
+                console.log(i); //所有数组a的成员里面的i，指向的都是同一个i，导致运行时输出的是最后一轮的i的值，也就是 10。
+            };
+        }
+        a[6]();
+    </script>
+</body>
+
+</html>
