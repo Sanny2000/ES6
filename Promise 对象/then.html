@@ -9,9 +9,11 @@
 
 <body>
     <script type="text/javascript">
-        let [foo = true] = [];
-        let [x, y = 'b'] = ['a'];
-        console.log(foo, x, y);
+        promise.then(function(value) {
+            // success
+        }, function(error) {
+            // failure
+        });
     </script>
 </body>
 

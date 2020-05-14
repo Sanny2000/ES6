@@ -9,9 +9,10 @@
 
 <body>
     <script type="text/javascript">
-        let [foo = true] = [];
-        let [x, y = 'b'] = ['a'];
-        console.log(foo, x, y);
+        function bar(x = 2, y = x) {
+            return [x, y];
+        }
+        bar();
     </script>
 </body>
 

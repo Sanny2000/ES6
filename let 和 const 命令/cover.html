@@ -9,9 +9,16 @@
 
 <body>
     <script type="text/javascript">
-        let [foo = true] = [];
-        let [x, y = 'b'] = ['a'];
-        console.log(foo, x, y);
+        var tmp = new Date();
+
+        function f() {
+            console.log(tmp);
+            if (false) {
+                var tmp = 'hello world';
+            }
+        }
+
+        f();
     </script>
 </body>
 
