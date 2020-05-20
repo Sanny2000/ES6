@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 非严格模式
+        (function() {
+            console.log(0o11 === 011);
+        })() // true
+
+        // 严格模式
+        (function() {
+            'use strict';
+            console.log(0o11 === 011);
+        })()
+    </script>
+</body>
+
+</html>
