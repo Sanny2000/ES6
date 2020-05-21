@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 不报错 
+        function foo(x, x, y) {
+            // ...
+        }
+        // 报错 使用参数默认值时，函数不能有同名参数。
+        function foo(x, x, y = 1) {
+            // ...
+        }
+        // SyntaxError: Duplicate parameter name not allowed in this context
+    </script>
+</body>
+
+</html>

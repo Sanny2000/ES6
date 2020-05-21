@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let x = 99;
+
+        function foo(p = x + 1) {
+            console.log(p);
+        }
+
+        foo() // 100
+
+        x = 100;
+        foo() // 101 参数p的默认值是x + 1。这时，每次调用函数foo，都会重新计算x + 1，而不是默认p等于 100。
+    </script>
+</body>
+
+</html>
